@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background:#000;
+    
+}
+.navbar ul li a{
+    color: #fffbdf !important;
+    font-weight: 600;
+    position: relative;
+    /* float: right; */
+    /* text-align: left; */
+    
+}
+.navbar ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+   
+}
+/* home */
+#home{
+    background:#21094e ;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* height: 100vh; */
+    padding: 40px 0px;
+}
+#home .pic{
+    animation: move 2s linear infinite alternate ; 
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+        transform: scale(0.9,0.9);
+    }
+    100%{
+        transform: translateY(-19px);
+        transform: scale(1,1);
+    }
+} 
+.tittle{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top:  120px; 
+    /* font-family: 'Dancing Script', cursive; */
+    
+ 
+}
+.pop{
+    box-shadow: none;
+    padding: 8px 25px;
+    background: linear-gradient(to right,#21094e,#511281);
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.pop:hover{
+    background: #000;
+    color: #fff;
+
+}
+
+
+
+
+
+#services{
+    padding: 80px 0;
+}
+.service_img{
+    width: 200px;
+    margin-top: 20px;
+}
+
+.services{
+    padding: 20px;
+    /* background: antiquewhite; */
+    margin: 19px 0px;
+    border-radius: 20px;
+    transition: all 0.5s;
+   
+}
+
+.services h4{
+    color: #000;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 25px; ;
+    text-transform: uppercase;
+}
+.services p{
+    color: #000;
+    font-weight: 400;
+    padding: 5px;
+    /* margin-top: 25px; ; */
+    /* text-transform: uppercase; */
+}
+.section_tittle{
+    position: relative;
+    color: #000;
+    margin-bottom: 8px;
+    padding: 19px;
+    font-weight: 700;
+    position: relative;
+}
+.section_tittle::after{
+    content: " ";
+    width: 32%;
+    height: 4px;
+    background: #21094e;
+    position: absolute;
+    bottom: 1px;left: 34%;
+    margin: auto;
+    display: block;  
+}
+.section_tittle::before{
+    content: " ";
+    width: 10%;
+    height: 6px;
+    background: #21094e;
+    position: absolute;
+    bottom: 0;left: 45%;
+    margin: auto;
+    align-items: center;
+    display: block;  
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    background: linear-gradient(to right,#21094e,#511281);
+    border-radius: 20px;
+    border: none;
+}
+
+
+#about{
+    /* background: #511281; */
+    padding: 80px 0px;
+}
+.about_tittle{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 8%;
+}
+#about ul {
+    margin-left:  20px;
+    /* list-style:none; */
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+}
+
+#testimonal{
+    padding: 80px 0px;
+    background-color: antiquewhite;
+}
+
+
+.testimonal{
+    border-left: 2px solid #511281;
+    /* border-top: 2px solid #511281; */
+    margin: 50px 0;
+    padding: 12px;
+}
+.testimonal img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user{
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+
+
+#Social{
+    background:#21094e;
+    padding: 60px 0;
+}
+.social_icon img{
+    width: 90px;
+    margin: 9px;
+    padding: 19px;
+    transition: transform 0.5s;
+}
+.social_icon img:hover{
+    transform: translateY(-12px);
+}
+
+
+
+#footer{
+    background: #000;
+}
+.form_control{
+    border: none;
+    box-shadow: none !important;
+    margin-top: 25px;
+    max-width: 250px;
+}
+hr{
+    background-color: #fff;
+}
+.copy{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
